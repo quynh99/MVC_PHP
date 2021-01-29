@@ -25,7 +25,7 @@ class TasksController extends Controller
                 $model = new TaskModel();
                 $model->setTitle($_POST["title"]);
                 $model->setDescription($_POST["description"]);
-                $model->setCreate_at(date("Y-m-d H:i:s"));
+                $model->setCreated_at(date("Y-m-d H:i:s"));
                 if ($task->add($model)) {
                     header("Location: " . WEBROOT . "tasks/index");
                 }
