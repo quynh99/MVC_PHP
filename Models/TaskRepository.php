@@ -28,9 +28,9 @@ class TaskRepository
         return $this->taskRM->find($id);
     }
 
-    public function delete($model)
+    public function delete($id)
     {
-        return $this->taskRM->delete($model);
+        return $this->taskRM->delete($id);
     }
 
     public function getAll($model)
